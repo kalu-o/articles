@@ -1,7 +1,7 @@
 // Listing 1. Parameter passing by reference.
 #include <iostream>
 
-void modify_by_reference(int &x)
+void modifyByReference(int &x)
 {
     x = x * 2;
 }
@@ -10,7 +10,7 @@ int main()
 {
     int num = 10;
     std::cout << "Original value: " << num << std::endl; // Output: 10
-    modify_by_reference(num);
+    modifyByReference(num);
     std::cout << "Modified value: " << num << std::endl; // Output: 20
     return 0;
 }
